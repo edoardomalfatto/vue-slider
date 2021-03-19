@@ -13,14 +13,14 @@ var app = new Vue({
         prevImage: function() {
             this.counter--;
             if (this.counter < 0) {
-                counter = (this.photos.length - 1);
+                this.counter = (this.photos.length - 1);
                 console.log(this.counter);
             }
         },
         nextImage: function() {
             this.counter++;
             if (this.counter > this.photos.length - 1) {
-                counter = 0;
+                this.counter = 0;
                 console.log(this.counter);
             }
         }
