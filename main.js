@@ -1,6 +1,7 @@
 var app = new Vue({
     el: '#root',
     data: {
+        active: "active",
         counter: 0,
         photos: [
             "https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?cs=srgb&dl=clouds-country-daylight-371633.jpg&fm=jpg",
@@ -23,6 +24,16 @@ var app = new Vue({
                 this.counter = 0;
                 console.log(this.counter);
             }
+        },
+        //bonus 2
+        pallinoClick: function(index) {
+            this.counter = index;
         }
+
+    },
+
+    //bonus 1
+    created: function() {
+        setInterval(this.nextImage, 3000);
     }
 });
