@@ -13,6 +13,7 @@
 
 <body>
     <div id="root" class="container">
+        <div @click="fantasia" class="button"><a href="#">Spazio alla Fantasia</a></div>
         <div class="slider-wrapper">
             <div @click="prevImage" class="prev">
                 <i class="fas fa-angle-left"></i>
@@ -26,6 +27,9 @@
             <div class="nav">
                 <i v-for="(photo,index) in photos" :class="(index==counter) ? active : null" @click="pallinoClick(index)" class="fas fa-circle"></i>
             </div>
+        </div>
+        <div class="fantasia">
+            <img id="fantasiaID" :src="fantasiaPhoto" alt="">
         </div>
     </div>
 

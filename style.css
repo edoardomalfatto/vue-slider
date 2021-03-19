@@ -66,3 +66,36 @@
 .nav>i.active {
     color: blue;
 }
+
+.button {
+    background-color: lime;
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.fantasia img {
+    z-index: 300000;
+    display: none;
+    height: 80vh;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100vw;
+}
+
+.fantasia img#fantasiaID.active {
+    display: block;
+}
+
+.slider-wrapper.none {
+    display: none;
+}

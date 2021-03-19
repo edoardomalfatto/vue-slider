@@ -3,6 +3,7 @@ var app = new Vue({
     data: {
         active: "active",
         counter: 0,
+        fantasiaPhoto: "https://www.liberandoprospero.it/wp-content/uploads/2020/07/FANTASIA-copertina.jpg",
         photos: [
             "https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?cs=srgb&dl=clouds-country-daylight-371633.jpg&fm=jpg",
             "https://static.photocdn.pt/images/articles/2017/04/28/iStock-646511634.jpg",
@@ -28,6 +29,11 @@ var app = new Vue({
         //bonus 2
         pallinoClick: function(index) {
             this.counter = index;
+        },
+        //bonus spazio alla fantasia
+        fantasia: function() {
+            $("#fantasiaID").addClass("active")
+            $(".slider-wrapper").addClass("none");
         }
 
     },
